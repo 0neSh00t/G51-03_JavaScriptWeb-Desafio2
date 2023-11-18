@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <title>Desafio 2 - Condiciones</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="assets/img/Camara.jpeg" alt="Camara" id="AddBorde" />
+      </section>
+    </header>
+
+    <main>
+      <section class="container">
+        <article>
+          <img src="assets/img/Carpintero.jpeg" alt="ImgCarpintero" />
+
+          <div class="inputSticker">
+            <h3>Carpintero</h3>
+            Cantidad:
+            <input
+              type="text"
+              id="Sticker1"
+              maxlength="2"
+              placeholder="0"
+              onkeypress="return validaNum(event)"
+            />
+          </div>
+        </article>
+
+        <article>
+          <img src="assets/img/Chucao.jpeg" alt="ImgChucao" />
+
+          <div class="inputSticker">
+            <h3>Chucao</h3>
+            Cantidad:
+            <input
+              type="text"
+              id="Sticker2"
+              maxlength="2"
+              placeholder="0"
+              onkeypress="return validaNum(event)"
+            />
+          </div>
+        </article>
+
+        <article>
+          <img src="assets/img/Martin.jpeg" alt="ImgMartin" />
+
+          <div class="inputSticker">
+            <h3>Martin Pescador</h3>
+            Cantidad:
+            <input
+              type="text"
+              id="Sticker3"
+              maxlength="2"
+              placeholder="0"
+              onkeypress="return validaNum(event)"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section class="containerBtn">
+        <p id="ValidaCompra"></p>
+        <button class="CompraSticker">Comprar</button>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <select name="select" id="Combo1">
+          <option value="0">0</option>
+        </select>
+
+        <select name="select" id="Combo2">
+          <option value="0">0</option>
+        </select>
+
+        <select name="select" id="Combo3">
+          <option value="0">0</option>
+        </select>
+      </section>
+
+      <section class="containerBtn">
+        <button class="ValidaPass">Validar</button>
+        <p id="MsgLogin"></p>
+      </section>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
